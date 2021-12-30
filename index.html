@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store</title>
+
+    <!-- font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!--css file link-->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- js file -->
+    <!-- <script src="./js/script.js" async></script> -->
+
+</head>
+<body>
+    <!-- header section start -->
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo">LOGO</a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#products">products</a>
+            <a href="#review">review</a>
+        </nav>
+
+        <div class="icons">
+            <a href="#carts" id="cart" class="fas fa-shopping-cart"></a>
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content cart-items-container">
+                <h2>Order details</h2>
+                <span class="close">&times;</span>
+                <table class="cart-items">
+                    <tr>
+                        <th><h3>Shopping List</h3></th>
+                    </tr>
+                    <!-- <tr class="cart-rows">
+                        <td>sweater</td>
+                        <td>
+                            <button>+</button>
+                            <input type="number" class="cart-quantity-input" value="1" min="1" max="10" >
+                            <button>-</button>
+                        </td>
+                        <td class="cart-price">$5.77</td>
+                        <td>
+                            <div class="remove">
+                                <u>Remove</u>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="cart-rows">
+                        <td>Green Jacket</td>
+                        <td>
+                          <button>+</button>
+                          <input type="number" class="cart-quantity-input" value="1" min="1" max="10" >
+                          <button>-</button>
+                        </td>
+                        <td class="cart-price">$12.02</td>
+                        <td>
+                            <div class="remove">
+                                <u>Remove</u>
+                            </div>
+                        </td>
+                    </tr>                                     -->
+                    <!-- <tr class="cart-rows">
+                        <td>leather Jacket</td>
+                        <td>
+                            <button>+</button>
+                            <input type="number" class="cart-quantity-input" value="1" min="1" max="10" >
+                            <button>-</button>
+                        </td>
+                        <td class="cart-price">$17.04</td>
+                        <td>
+                            <div class="remove">
+                                <u>Remove</u>
+                            </div>
+                        </td>
+                    </tr>       -->
+                </table>
+                <hr>
+                <div class="checkout">
+                    <div class="total">
+                    <div>
+                        <div class="Subtotal">Sub-Total</div>
+                        <div class="items">Items</div>
+                    </div>
+                        <div class="total-amount">$0</div>
+                    </div>
+                    <button class="button buybtn">BUY</button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- header section end -->
+
+
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="slider">
+            <div class="home-data">
+                <div class="slider-content">
+                    <h1>Winter Collection</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati porro ex, veniam tempore excepturi aut asperiores a hic facere dignissimos.</p>
+                </div>
+                <div class="home-btn">
+                    <button class="btn"><a href="#products">SHOP NOW</a></button>
+                </div>
+            </div>
+            <div class="side-image">
+                <img src="./images/sideImg.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- home section end -->
+
+
+    <!-- services section start -->
+    <section class="services">
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-shipping-fast"></i>
+                <h3>fast delivery</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, alias.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-undo"></i>
+                <h3>10 days replacement</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, alias.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-headset"></i>
+                <h3>24 x 7 support</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, alias.</p>
+            </div>
+        </div>
+    </section>
+    <!-- services section end -->
+
+
+    <!-- products section start -->
+    <section class="products" id="products">
+        <h1 class="heading">latest <span>products</span></h1>
+        <div class="box-container">
+            <div class="box shopItem">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <img src="./images/whiteJacket.jpg" alt="">
+                <div class="content">
+                    <h3 class="shopItemTitle">white jacket</h3>
+                    <div class="price shopItemPrice">$10.78 <span></span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <button ><a href="#myModal" class="btn addToCard">add to cart</a></button>
+                </div>
+            </div>
+            <div class="box shopItem">
+                <div class="icons">
+                    <a href="" class="fas fa-heart"></a>
+                    <a href="" class="fas fa-share"></a>
+                    <a href="" class="fas fa-eye"></a>
+                </div>
+                <img src="./images/blueJacket.jpg" alt="">
+                <div class="content">
+                    <h3 class="shopItemTitle">blue jacket</h3>
+                    <div class="price shopItemPrice">$20.99 <span></span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <button><a href="#myModal" class="btn addToCard">add to cart</a></button>
+                </div>
+            </div>
+            <div class="box shopItem">
+                <div class="icons">
+                    <a href="" class="fas fa-heart"></a>
+                    <a href="" class="fas fa-share"></a>
+                    <a href="" class="fas fa-eye"></a>
+                </div>
+                <img src="./images/greenJacket.jpg" alt="">
+                <div class="content">
+                    <h3 class="shopItemTitle">green Jacket</h3>
+                    <div class="price shopItemPrice">$12.02 <span></span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <button><a href="#myModal" class="btn addToCard">add to cart</a></button>
+                </div>
+            </div>
+            <div class="box shopItem">
+                <div class="icons">
+                    <a href="" class="fas fa-heart"></a>
+                    <a href="" class="fas fa-share"></a>
+                    <a href="" class="fas fa-eye"></a>
+                </div>
+                <img src="./images/leatherJacket.jpg" alt="">
+                <div class="content">
+                    <h3 class="shopItemTitle">leader jacket</h3>
+                    <div class="price shopItemPrice">$17.04 <span></span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <button><a href="#myModal" class="btn addToCard">add to cart</a></button>
+                </div>
+            </div>
+            <div class="box shopItem">
+                <div class="icons">
+                    <a href="" class="fas fa-heart"></a>
+                    <a href="" class="fas fa-share"></a>
+                    <a href="" class="fas fa-eye"></a>
+                </div>
+                <img src="./images/hoddie.jpg" alt="">
+                <div class="content">
+                    <h3 class="shopItemTitle">hoddie jacket</h3>
+                    <div class="price shopItemPrice">$8.79 <span></span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <button><a href="#myModal" class="btn addToCard">add to cart</a></button>
+                </div>
+            </div>
+            <div class="box shopItem">
+                <div class="icons">
+                    <a href="" class="fas fa-heart"></a>
+                    <a href="" class="fas fa-share"></a>
+                    <a href="" class="fas fa-eye"></a>
+                </div>
+                <img src="./images/sweater.jpg" alt="">
+                <div class="content">
+                    <h3 class="shopItemTitle">sweater</h3>
+                    <div class="price shopItemPrice">$5.77 <span></span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <button><a href="#myModal" class="btn addToCard">add to cart</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- products section end -->
+
+
+    <!-- review section start -->
+    <section class="review" id="review">
+        <h1 class="heading">customer's <span>review</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="./images/review1.jpg" alt="">
+                <h3>Jhon Deo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque provident commodi voluptates quis repudiandae optio modi dolor, amet atque cum tempore dignissimos, nisi quaerat explicabo impedit fugiat at? Non, laboriosam?</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/review2.jpg" alt="">
+                <h3>Sara elis</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque provident commodi voluptates quis repudiandae optio modi dolor, amet atque cum tempore dignissimos, nisi quaerat explicabo impedit fugiat at? Non, laboriosam?</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/review3.jpg" alt="">
+                <h3>Matheo wilsom</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque provident commodi voluptates quis repudiandae optio modi dolor, amet atque cum tempore dignissimos, nisi quaerat explicabo impedit fugiat at? Non, laboriosam?</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- review section end -->
+
+
+    <!-- footer section start -->
+    <section class="background">
+        <div class="footer">
+            <div class="footer-content">
+                <p>Need help? Call us</p>
+                <h3>+92(44)345 345 35</h3>
+                <p>Level 5 Siddique Center</p>
+                <p>Victoria 3000.Cantt</p>
+            </div>
+            <hr>
+            <p>&copy;2021, Winter Collection. All Rights Reserved</p> 
+        </div>
+    </section>
+    <!-- footer section end -->
+
+
+
+    <!--js file link-->
+    <script src="./js/script.js"></script>
+</body>
+</html>
